@@ -63,7 +63,7 @@ form2.addEventListener('submit', function(e) {
         })
         .then(response => {
             cmessage.textContent = "Form submitted successfully!";
-            form.reset(); // clears all fields
+            form2.reset(); // clears all fields
         })
         .catch(error => {
             cmessage.textContent = "Error submitting the form. Try again.";
