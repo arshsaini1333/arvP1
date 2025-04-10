@@ -1,0 +1,587 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0) !important;
+    transition: 0.5s all ease;
+}
+
+
+/* .navbar:hover {
+    background-color: black !important;
+} */
+
+.navbar .container-fluid {
+    padding: 0 2rem !important;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.container-fluid .collapse {
+    padding-right: 1rem;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.brand {
+    display: flex;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+.navbar-brand {
+    opacity: 1 !important;
+}
+
+.navbar a {
+    color: white !important;
+    opacity: 0.7;
+    transition: all 0.5s ease;
+    font-size: 1.1rem;
+}
+
+.navbar a:hover {
+    transform: scale(1.05);
+    color: white;
+    opacity: 1;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+/* Bodyy */
+
+.body {
+    display: flex;
+    flex-direction: column;
+    /* gap: 3rem; */
+}
+
+.home {
+    /* padding-top: 2rem; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.slider {
+    height: 100%;
+    width: 100% !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    background-position: top center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.form-container {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.card {
+    margin-top: 6rem;
+    padding: 1rem 1.2rem;
+    opacity: 0.8;
+}
+
+.card p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.card .ul-list {
+    background-color: #198754;
+    color: white;
+    padding: 1rem;
+}
+
+.card ul {
+    border: 2px white dotted;
+    padding: 0.5rem 0.5;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+.form input {
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.buttons button {
+    /* width: 100%; */
+    border-radius: 1rem;
+    border: none !important;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.submit {
+    background-color: #d88922;
+}
+
+.phone {
+    background-color: #198754;
+}
+
+@media screen and (max-width: 1000px) {
+    .slider {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        width: 60%;
+        box-shadow: 5px 5px 10px black;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .slider {
+        padding-top: 3rem;
+    }
+    .card {
+        /* margin-top: 5rem; */
+        width: 90%;
+    }
+}
+
+
+/* ---------About----------- */
+
+.about {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.aboutBody {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.aboutBody div {
+    width: 40%;
+    font-size: 1.1rem;
+    /* height: 10rem; */
+}
+
+.aboutImage img {
+    height: 100%;
+    width: 100%;
+}
+
+.aboutHead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutHead p {
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .about {
+        padding-top: 5rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .about {
+        padding-top: 9rem;
+    }
+    .aboutBody {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        div {
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about {
+        padding-top: 12rem;
+    }
+}
+
+.key-feature {
+    background-color: rgba(0, 0, 0, 0.642) !important;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    /* align-items: center; */
+    flex-direction: column;
+    /* height: 100vh; */
+    width: 100%;
+    color: white;
+    padding: 5.5rem 0;
+}
+
+.keyHeading {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    width: 100%;
+    padding: 0 5rem;
+}
+
+.fCard {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.338);
+    color: white;
+    border-radius: 1rem;
+    height: 14rem;
+    gap: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.836);
+    ;
+    transition: 1s all ease-in-out;
+}
+
+.fCard:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 836);
+    cursor: pointer;
+}
+
+.fCard .fImage img {
+    width: 100%;
+    /* height: 5rem; */
+    /* height: 1rem; */
+    /* height: 50%; */
+    height: 10rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.fContent {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1000px) {
+    .features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .features {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 4rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .features {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 1.2rem;
+    }
+}
+
+
+/* ------------Price-------------- */
+
+.price {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 5rem 0;
+    gap: 3rem;
+    /* height: 100vh; */
+}
+
+.pHead {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.price .pContent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: center;
+    gap: 4rem;
+}
+
+.pCard {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.642);
+    color: white;
+    width: 20%;
+    box-shadow: 3px 3px 5px black;
+    transition: 0.5s all ease-in-out;
+}
+
+.pCard:hover {
+    /* transform: scale(1.05); */
+    box-shadow: 6px 6px 10px black;
+}
+
+.pcHead {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.pcContent {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    span {
+        text-align: center;
+    }
+}
+
+.pCard a {
+    text-decoration: none;
+    padding: 0.6rem 2rem;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.642);
+    border: 1px solid black;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    transition: 0.5s all ease-in-out;
+}
+
+.pCard a:hover {
+    background-color: transparent;
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .pCard {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .pContent {
+        display: flex;
+        flex-direction: column;
+    }
+    .pCard {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .pCard {
+        width: 85%;
+    }
+}
+
+.amenties {
+    /* height: 100vh; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 10rem 0;
+}
+
+.aHead {
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+
+.aContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.aCard {
+    padding: 0rem 1rem;
+    width: 15%;
+    border: 2px solid rgba(0, 0, 0, 0.397);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.397);
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: 0.5s all ease-in;
+}
+
+.aCard:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.397);
+    ;
+}
+
+.aCard img {
+    width: 100%;
+    height: 5rem;
+}
+
+@media screen and (max-width: 980px) {
+    .aCard {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .aCard {
+        width: 60%;
+    }
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+    height: 100vh;
+}
+
+.lHead {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.cHead {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 5rem;
+    height: 100vh;
+}
+
+.cContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cForm {}
+
+@media screen and (max-width: 850px) {
+    .cContainer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .buttons {
+        flex-direction: column;
+    }
+}
+
+.cAdd {
+    background-color: rgba(0, 0, 0, 0.397);
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 6px black;
+}
+
+.footer {
+    margin-top: 5rem;
+    background-color: black;
+    /* height: 5rem; */
+    width: 100%;
+    color: white;
+    padding: 1rem;
+    p {
+        width: 100%;
+        text-align: center;
+    }
+}
